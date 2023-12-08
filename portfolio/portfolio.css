@@ -240,16 +240,25 @@ nav .bx {
     align-items: center;
     height: 1000px;
     width: 60%;
-    background-image: url(../images/ordi2.png);
+    background-image: url(img_acc.png);
     background-repeat: no-repeat;
     z-index: 1;
     background-position: center;
     background-attachment: scroll;
-    background-size: contain;
-    /* width: 70%; */
+    background-size: auto;
+    width: 70%;
+    transform-style: preserve-3d; /* Indique que les transformations doivent être appliquées en 3D */
+    animation: rotateImage 10s infinite linear; /* Animation pour la rotation continue */
 
 }
-
+@keyframes rotateImage {
+    0% {
+        transform: rotateY(0deg); /* Rotation initiale */
+    }
+    100% {
+        transform: rotateY(360deg); /* Rotation complète */
+    }
+}
 
 #Accueil h2 {
     color: white;
@@ -304,6 +313,7 @@ width: 300px;
 
 }
 
+
 #Apropos {
     display: flex;
     flex-direction: row;
@@ -344,8 +354,9 @@ width: 300px;
 
 /* section{
     border: solid 2px rebeccapurple;
-    height: 1500px;
-} */
+    /* Exemple pour réduire la marge pour les sections */
+  
+/* }  */
 
 #Competences {
     display:flex;
@@ -353,12 +364,14 @@ width: 300px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 69%;
+    top: 150px;
   
-    padding: 20px;
-    
-    
+  
 
+}
+p{
+    text-align: justify;
 }
  h1{
     font-size: 30pt;
@@ -370,10 +383,13 @@ width: 300px;
 .cards{
     display: inline-block;
     flex-direction: column;
-    padding: 10px;
-    margin: 10px;
+    padding: 30px;
+    margin: 20px;
     height: fit-content;
+    margin-top: 100px;
     width: 100%;
+    top: 100px;
+    height: 1000px;
     border-radius: 25px;
     transition-duration: 5ms;
     pointer-events: none;
@@ -410,8 +426,8 @@ width: 300px;
   width: 90%;
   background-color: #d3d3d3;
   margin-top: 20px;
-  height: 20px;
   border-radius: 20px;
+  height: 20px;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -419,9 +435,10 @@ width: 300px;
 }
 
 .skills {
-  text-align: right;
-  color: rgb(68, 68, 68);
-  height: 20px;
+    text-align: right;
+    color: rgb(68, 68, 68);
+    height: 20px;
+    border-radius: 20px;
 }
 
 .html {width: 90%; background-color: #00eaff; font-family: 'Roboto', sans-serif; font-weight: bold;}
@@ -449,16 +466,7 @@ width: 300px;
   }
 
 
-/* #Experiences{
-    height: 1000px;
-    width: 60%;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-} */
+
 #Postes{
     display: flex;
     flex-direction: row;
@@ -537,8 +545,8 @@ width: 300px;
     color: #18191a;
 }
 
-#formation{
-    border: 2px solid #fcfeff;
+#Formation{
+   height: 900px;
     
 }
 
@@ -547,28 +555,116 @@ width: 300px;
     margin: 0 auto;
     border: 1px solid #f1f1f1;
     border-radius: 25px;
-    width: 85%;
+    width: 95%;
 
 
 }
 .mx-auto{
-    width: 100%;
+    width: 90%;
+    margin-top: 100px;
+}
+.-mt-3{
+ 
 }
 .-mt-2 .rounded-2xl{
    margin: 20px;
+
 }
+.-mt-2 .rounded-2xl :hover{
+
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(6, 124, 243);
+ 
+ }
 p{
     font-size: 15pt;
 }
+#Experiences {
+    width: 70%;
+    display: flex;
+    margin: 0p auto;
+    width: 100%;
+
+}
+
+/* Ajoutez ces styles pour l'effet d'apparition de l'image */
+/* Ajoutez ces styles pour l'effet d'apparition de l'image */
+.image-container {
+    /* overflow: hidden; */
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .hidden-image {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  /* Lors du survol, montrez l'image */
+  a:hover .image-container {
+    max-height: 200px; /* Hauteur de l'image en pixels */
+  }
+  
+  .block-.rounded-2xl .hidden-image {
+    opacity: 1;
+  }
+  
+  .block{
+    border: 1px solid rgb(134, 138, 138);
+    /* transition-duration: 1s; */
+    transition: max-height 0.3s ease-out;
+    /* padding: 15px; */
+    margin: 10px;
+  }
+ /* .mx-auto .mt-8 :hover{
+    border: 2px solid aqua;
+    transition: all;
+    
+
+  } */
+
+  /* Styles par défaut pour l'élément <a> */
+.block {
+    position: relative;
+    /* Autres styles par défaut de l'élément <a> avec la classe .block */
+  }
+  
+  /* Pseudo-élément pour l'effet de survol */
+  .block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: inherit;
+    transition: opacity 0.2s ease-in-out;
+    background-color: transparent; /* Couleur de fond pour l'effet de survol */
+    opacity: 0; /* Par défaut, pas visible */
+  }
+  
+  /* Effet de survol */
+  .block:hover::before {
+    opacity: 1; /* Rendre le pseudo-élément visible au survol */
+    background-color: rgb(27, 27, 27); 
+    border: 1px solid rgb(0, 255, 255);
+    box-shadow: 0 0 20px rgba(224, 222, 223, 0.5); /* Ombre portée au survol */
+    /* Autres styles pour l'effet de survol si nécessaire */
+  }
+  
 
 
+
+
+  
 
 
 @media screen and (min-width: 340px) and (max-width: 1400px) {
     /* Styles pour la plage de 551px à 750px */
     body{
     background-color: #18191a;
-    height: 9000px;
+    height: 10000px;
     margin: 0;
     width: 100%;
     display: flex;
@@ -582,11 +678,14 @@ p{
     justify-content: center;
     align-items: center;
     width: 90%;
-  
     padding: 20px;
     
     
 
 }
+#Formation{
+    height: 1200px;
+     
+ }
 
 }
