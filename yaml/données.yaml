@@ -1,0 +1,136 @@
+# header title 
+titre_page: "Portfolio HTML"
+
+
+# Accueil 
+sections:
+  accueil:
+    iframe_url: "https://my.spline.design/macbookprocopy-3c1433f7990ef1135dba000f83ec51d0/"
+
+
+# nav
+
+menu:
+  - id: "Accueil"
+    label: "Accueil"
+  - id: "Apropos"
+    label: "A propos"
+  - id: "Competences"
+    label: "Compétences"
+  - id: "Experiences"
+    label: "Expériences"
+  - id: "Formation"
+    label: "Formation"
+  - id: "Projet"
+    label: "Projets"
+  - id: "Contact"
+    label: "Contact"
+
+# A propos
+apropos:
+  titre: "Actuellement en formation web développement et alternante technicienne support et développeuse front-end."
+  liens:
+    - texte: "LinkedIn"
+      url: "https://www.linkedin.com/in/eva-g-56768321a/?originalSubdomain=fr"
+      logo: "bx bxl-linkedin-square"
+    - texte: "Github"
+      url: "https://github.com/Evacode8"
+      logo: "bx bxl-github"
+  bouton_competences: "Voir les compétences!"
+
+# Competences 
+
+competences:
+  - icone: "bxl-html5"
+    label: "HTML5"
+    niveau: "20%"
+  - icone: "bxl-css3"
+    label: "CSS3"
+    niveau: "80%"
+  - icone: "bxs-file-js"
+    label: "JavaScript"
+    niveau: "35%"
+  - icone: "bxl-php"
+    label: "PHP"
+    niveau: "10%"
+  - icone: "image-babylon"
+    label: "Babylon JS"
+    niveau: "30%"
+  - icone: "bxl-bootstrap"
+    label: "Bootstrap"
+    niveau: "30%"
+  
+langues:
+  - icone: "bx bxs-flag"
+    label: "Français"
+    niveau: "100%"
+  - icone: "bx bxs-flag"
+    label: "Hongrois"
+    niveau: "100%"
+  - icone: "bx bxs-flag"
+    label: "Anglais"
+    niveau: "55%"
+  - icone: "bx bxs-flag"
+    label: "Espagnol"
+    niveau: "20%"
+
+
+
+
+# Exepriences 
+
+experiences:
+  - titre: "Co-thérapeute et stagiaire Licence 3"
+    date: "2020-2021"
+    lieu: "CMP Les Lilas (93)"
+    description: "Participation active à groupe thérapeutique. Plus précisément à un psychodrame de groupe. Travail sur le transfert et contre-transfert avec des pré-adolescents. Mise en scène avec l'équipe pluridisciplinaire de jeu de rôle autour du l'école. Participation aux réunions d'équipe."
+    lien: "https://www.ville-leslilas.fr/annu/9-19-282/sante/cmp-centres-medico-psychologiques"
+  - titre: "Stagiaire psychologue et Co-thérapeute Master 1"
+    date: "2021-2022"
+    lieu: "CATTP Pantin"
+    description: "Participation aux médiations de groupes thérapeutiques et aux réunions institutionnelles. Réalisation d'un mémoire de recherche (TER) sur la représentation du corps chez l'enfant psychotique au travers la médiation picturale. Co-thérapeute auprès d'un groupe d'enfants de 5 ans, diagnostiqués TSA/Psychotique."
+    lien: "https://psychologuesenligne.net/blog/cattp-cest-quoi%e2%80%89-quels-roles%e2%80%89/"
+  - titre: "Conseillère de vente"
+    date: "2022-2023"
+    lieu: "Etam, Maje, LVMH. GL Haussmann-Paris Aubade-La Défense, Grande épicerie de Paris"
+    description: "Conseils clients, accueil, fidélisation, cabine, réassort, gestion des stocks, gestion de la tenue de la boutique. Ouverture/fermeture en autonomie. Gestion de la caisse et encaissement. Formation de collaborateurs."
+    lien: "https://www.aubade.fr/?tduid=da63de31797e7fc225a7e9028bfd497e&_mkpid=a_4698&_mkpd=2115073|da63de31797e7fc225a7e9028bfd497e&_mkpc=2115073&utm_source=tradedoubler&utm_medium=affiliate-marketing&utm_campaign=2115073"
+  - titre: "Prof de Piano"
+    date: "2023"
+    lieu: "Caen"
+    description: "Depuis que je me suis installée dans la région Caennaise, je suis devenue prof de piano. j'enseigne majoritairement le solfège, la lecture rythmique. Je donne des outils aux élèves pour déchiffrer une partition. J'ai au total une dizaine d'élèves de 17 à 60 ans. J'enseigne différents registres du classique en passant par le jazz ou le contemporain."
+    lien: "https://www.superprof.fr/pianiste-formation-conservatoire-propose-cours-piano-debutant-enfants-adultes.html"
+  - titre: "Développeuse web autodidacte pour une entreprise de musique indépendante"
+    date: "2022-Présent"
+    lieu: "Paris-Caen"
+    description: "Ce projet m'a permis de réaliser mon intérêt majeur pour le développement Web c'est pourquoi j'ai décidé de me former dans ce domaine."
+    details_supplementaires: "Site de réservation de cours de musique"
+    lien: "https://evacode8.github.io/pages/cours.html"
+  - titre: "Alternante Développeuse Web"
+    date: "2023-Présent"
+    lieu: "Léonard solutions, Caen"
+    description: "Gestion de la hotline, technicienne support et développeuse front-end. Développement d'un nouveau logiciel 3D de modélisation de véranda et pergola à l'aide de Babylon js, JavaScript."
+    lien: "https://www.leonard-solutions.com/"
+
+# Formation 
+
+Formation:
+  - titre: "Licence psychologie Université de Paris"
+    date: "2019-2020"
+    description: "Psychologie clinique, développement, neuropsychologie, psychologie différentielle, analyse statistiques de données. Travaux d'études et de recherches (TER). psychopathologie de l'enfant et de l'adolescent. Tests projectifs (Rorschach, TAT). Anglais pour psychologues."
+    lien: "https://odf.u-paris.fr/fr/offre-de-formation/licence-XA/sciences-humaines-et-sociales-SHS/psychologie-K2NDLZCV.html"
+  - titre: "Master 1 Université Paris cité"
+    sous_titre: "Parcours: Cliniques psychanalytiques de l'enfant et de l'adolescent"
+    date: "2020-2021"
+    description: "Mémoire, entretien clinique, bilan psychologique, épistémologie, fondamentaux en psychopathologie, Anglais psychopathologies, étude du fonctionnement psychique, stage et projet tutorés."
+    lien: "https://psychologie.u-paris.fr/masters/"
+  - titre: "Web développement"
+    date: "2022-2023"
+    sous_titre: "Openclassroom"
+    description: "Formation en autodidacte, Html, css, Base de donnée Mysql, PhpMyadmin, js"
+    lien: "https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3/8061261-creez-votre-premiere-page-web-en-html"
+
+
+
+
+
